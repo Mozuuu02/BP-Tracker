@@ -1,0 +1,110 @@
+
+
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9f9f9;
+  color: #333;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.App {
+  justify-content: center;
+  align-items: center;
+  max-width: 600px;
+  margin: 2rem auto;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 8px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+form input {
+  margin: 0.5rem;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+form button {
+  padding: 0.5rem 1rem;
+  background: #007bff;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+form button:hover {
+  background: #0056b3;
+}
+
+button {
+  margin-left: 1rem;
+  padding: 0.2rem 0.5rem;
+  background: red;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+button:hover {
+  background: darkred;
+}
+
+
+@media (max-width: 600px) {
+  .App {
+    padding: 10px; /* Reduce padding for smaller screens */
+  }
+
+  ul {
+    padding-left: 8px;
+  }
+
+  li {
+    flex-direction: row; /* Ensure items stay on the same row (no stacking) */
+    align-items: center; /* Align vertically in the center */
+    /* padding: 8px; */
+  }
+
+  button {
+    margin-left: 10px; /* Add space between text and button */
+    width: auto; /* Allow the button to resize based on content */
+  }
+
+  /* Adjust text size */
+  h2 {
+    font-size: 1.5em; /* Smaller heading on small screens */
+  }
+
+  p {
+    font-size: 1em; /* Adjust paragraph font size */
+  }
+}
+
+/* For screens between 600px and 1024px (tablets) */
+@media (max-width: 1024px) and (min-width: 601px) {
+  .App {
+    padding: 15px; /* A little less padding than on desktop */
+  }
+
+  li {
+    flex-direction: row; /* Keep items side by side */
+  }
+
+  button {
+    width: auto; /* Let button be the same size as text */
+  }
+
+  h2 {
+    font-size: 1.8em; /* Slightly smaller heading */
+  }
+
+  p {
+    font-size: 1.1em; /* Adjust paragraph font size */
+  }
+}
